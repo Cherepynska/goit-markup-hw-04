@@ -16,6 +16,7 @@
     --backround-color: #F5F4FA;
     --logo:#000000;
     --footer-adress: rgba(255, 255, 255, 0.6);
+    --hero: rgba(47, 48, 58, 0.4);
 }
 body {
    background-color: var(--wite);
@@ -146,6 +147,14 @@ img{
     min-height: 50px;
 }
 .section-hero{
+    background-image: linear-gradient(var(--hero),var(--hero)), 
+    url(../images/logo/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--footer);
     text-align: center;
     padding-top: 200px;
