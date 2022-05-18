@@ -97,7 +97,9 @@ img{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.contacs-icon{
+.adress-link{
+    display: flex;}
+.contacts-icon{
     display: flex;
     margin-right: 10px;
     fill: var(--primary-text-color);
@@ -133,8 +135,9 @@ img{
 
 .site-nav-list .link:hover,
 .site-nav-list .link:focus,
-.site-nav-list .adress-link:hover,
-.site-nav-list .adress-link:focus {
+.adress-link:hover,
+.adress-link:focus, .contacts-icon:hover,
+.contacts-icon:focus {
    color: var(--accent-color);
    fill: var(--accent-color);
 }
@@ -193,6 +196,16 @@ img{
     margin-bottom: 50px; 
 }
 /* Benefits */
+.benefits-item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backround-color);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
 .benefits-list{
     display: flex;
 }
@@ -283,6 +296,9 @@ margin-right: 30px;
     margin-bottom: 16px;
 }
 /* Clients */
+.clients-icon{
+    fill: var(--icon);
+}
 .clients-title{
     margin-bottom: 50px;
     font-weight: 700;
@@ -297,14 +313,23 @@ margin-right: 30px;
 .clients-list{
     display: flex;
 }
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: var(--accent-color);
+}
+.clients-item:hover, 
+.clients-item:focus{
+    border: 1px solid var(--accent-color);
+}
 .clients-item{
     display: flex;
     width: 170px;
     height: 92px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icon);
     border-radius: 4px;
+    cursor: pointer;
 }
 /* Button */
 .button{
@@ -322,6 +347,39 @@ margin-right: 30px;
     cursor: pointer;
 }
 /* Footer */
+.container-adress{
+    margin-right: 70px;
+}
+.container.footer{
+    align-items: baseline;
+    display: flex;
+}
+.footer-socials-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.footer-socials-link:hover,.footer-socials-link:focus{
+    background-color: var(--accent-color);
+}
+.footer-socials-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-socials-icon{
+    fill: var(--wite);
+}
+.footer-title{
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--wite);
+    margin-bottom: 20px;
+}
 .main-footer{
     display: flex;
 }
