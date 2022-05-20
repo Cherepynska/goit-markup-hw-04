@@ -304,27 +304,16 @@ margin-right: 30px;
     text-align: center;
     color: var(--title-text-color);
 }
+.clients-list {
+    display: flex;
+}
+.clients-item {
+    width: 100%;
+}
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
-.clients-list{
-    display: flex;
-}
-.clients-icon{
-    fill: var(--icon);
-}
-.clients-item{
-    width: 100%;
-}
-.clients-logo:hover, 
-.clients-logo:focus {
-    border: 1px solid var(--accent-color);
-}
-.clients-icon:focus,
-.clients-icon:hover{
-        fill: var(--accent-color);
-}
-.clients-logo{
+.clients-logo {
     display: flex;
     width: 170px;
     height: 92px;
@@ -333,6 +322,17 @@ margin-right: 30px;
     border: 1px solid var(--icon);
     border-radius: 4px;
     cursor: pointer;
+}
+.clients-logo:hover,
+.clients-logo:focus {
+    border: 1px solid var(--accent-color);
+}
+.clients-icon{
+    fill: var(--icon);
+}
+.clients-logo:focus .clients-icon,
+.clients-logo:hover .clients-icon{
+        fill: var(--accent-color);
 }
 /* Button */
 .button{
